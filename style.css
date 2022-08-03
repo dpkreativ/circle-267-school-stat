@@ -1,0 +1,181 @@
+/* Import Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,700&display=swap');
+
+/* General Styles -> Notify maintainer before editing */
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+*,
+html {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5rem;
+}
+
+/* ========== Header and Nav ========== */
+
+.DO-header {
+  width: 100%;
+}
+
+.DO-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DO-project-name {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.DO-credit {
+  display: flex;
+  align-items: center;
+}
+
+.DO-team {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.DO-team-name,
+.DO-fun-fact {
+  font-weight: 500;
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+.DO-replit-url {
+  display: flex;
+  align-items: center;
+}
+
+.DO-replit-img {
+  width: 1.5rem;
+  object-fit: contain;
+}
+
+.DO-fun-section {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+/* ========== Main Content ========== */
+.DO-main {
+  margin: 4rem 0;
+}
+
+.DO-section-title {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* ========== TABLES ========== */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+}
+
+.table {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.table-heading {
+  border: none;
+}
+
+.table-subheading {
+  font-weight: 300;
+}
+
+#general-stats-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+  #general-stats-table {
+    grid-template-columns: 1fr;
+  }
+
+  #general-stats-table tbody td {
+  font-size: 1.5rem;
+  text-align: center;
+}
+}
+
+#general-stats-table tbody td {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.DO-track {
+  width: 15%;
+}
+
+.DO-track-indicator {
+  border-radius: 50px;
+  border: 1px solid;
+  width: 10rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  padding: 0.5rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.track-cloud {
+  border-color: #3163c2;
+  color: #3163c2;
+}
+
+.cloud-dot {
+  background-color: #3163c2;
+}
+
+.track-backend {
+  border-color: #249a41;
+  color: #249a41;
+}
+
+.backend-dot {
+  background-color: #249a41;
+}
+
+.track-frontend {
+  border-color: #f6ad01;
+  color: #f6ad01;
+}
+
+.frontend-dot {
+  background-color: #f6ad01;
+}

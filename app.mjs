@@ -1,17 +1,26 @@
+/**
+ * CONTRIBUTORS:
+ * -> Divine Orji
+ * -> Clinton Mekwunye
+ */
+
+// IMPORTS
+// import students from './scripts/database/students.mjs'
+import instructors from './scripts/database/instructors.mjs';
+import students from './scripts/database/students.mjs';
+import generalStatsTable from './scripts/logic/generalStatsTable.mjs';
+import instructorsTable from './scripts/logic/instructorsTable.mjs';
+import studentsTable from './scripts/logic/studentsTable.mjs';
+
+// Get Elements from HTML file
+
+// Create startApp function
 function startApp() {
-    // Your entire app should not necessarily be coded inside this 
-    // single function (though there's no penalty for that), 
-    // so create and use/call additional functions from here
-  
-    // pls remove the below and make some magic in here!
-    console.log('make magic in here!');
-  
-    const header = document.querySelector('h2');
-    if(header) {
-      header.textContent = 'make some magic here!!';
-    }
-  };
-  
-  // ======= DO NOT EDIT ============== //
-  export default startApp;
-  // ======= EEND DO NOT EDIT ========= //
+  console.log(`Let's git this shii!`);
+  generalStatsTable(students);
+  instructorsTable(instructors);
+  studentsTable(students);
+}
+
+// Export startApp function
+export default startApp;

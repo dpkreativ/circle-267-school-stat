@@ -1,19 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Stat</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <!--   HEADER -->
+  <!--   
+    Contributors => [Divine Orji]
+  -->
+  <header class="DO-header">
+    <nav class="DO-nav">
+      <h1 class="DO-project-name">School Stat</h1>
+      <div class="DO-credit">
+        <div class="DO-team">
+          <p>Built by:</p>
+          <p class="DO-team-name">Circle-267, AltSchool Africa</p>
+        </div>
+        <div>
+          <a href="https://replit.com/@circle-267/circle-267-school-stat" target="_blank" class="DO-replit-url">
+            <img src="./images/replit_logo.svg" class="DO-replit-img" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--       <section class="DO-fun-section">
+        <article>Fun Fact:</article>
+        <article class="DO-fun-fact">
+          There are 88 students in the cloud track&excl;
+        </article>
+      </section> -->
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="DO-main">
+    <!--
+      Section => GENERAL STATS TABLE
+      Contributors => [Esther Simon, Divine Orji]
+    -->
+    <section id="general-stats-section">
+      <!-- Write your code here -->
+      <h2 class="DO-section-title">General Stats</h2>
+
+      <article id="general-stats-table" class="table">
+        <table id="general-stats-tracks">
+          <thead>
+            <tr>
+              <th class="table-heading" colspan="3">Tracks</th>
+            </tr>
+            <tr>
+              <th class="table-subheading">Frontend</th>
+              <th class="table-subheading">Backend</th>
+              <th class="table-subheading">Cloud</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <table id="general-stats-gender">
+          <thead>
+            <tr>
+              <th class="table-heading" colspan="3">Gender</th>
+            </tr>
+            <tr>
+              <th class="table-subheading">Male</th>
+              <th class="table-subheading">Female</th>
+              <th class="table-subheading">Queer</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <table id="general-stats-age">
+          <thead>
+            <tr>
+              <th class="table-heading" colspan="3">Age</th>
+            </tr>
+            <tr>
+              <th class="table-subheading">Max</th>
+              <th class="table-subheading">Min</th>
+              <th class="table-subheading">Average</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+
+    <!--
+      Section => INSTRUCTORS TABLE
+      Contributors => [Clinton Mekwunye, Divine Orji]
+    -->
+    <section id="instructors-table-section">
+      <!-- Write your code here -->
+      <h2 class="DO-section-title">Instructors</h2>
+
+      <table class="table">
+        <thead class="DO-table-head">
+          <tr>
+            <th>Name of Instructor</th>
+            <th class="DO-track">Track</th>
+            <th>Courses</th>
+            <th class="DO-track">No. of Courses</th>
+          </tr>
+        </thead>
+        <tbody id="instructors-table-body" class="DO-table-body"></tbody>
+      </table>
+    </section>
+
+    <!--
+      Section => STUDENTS TABLE
+      Contributors => [Divine Orji]
+    -->
+    <section id="students-table-section">
+      <!-- Write your code here -->
+      <h2 class="DO-section-title">Students</h2>
+
+      <table class="table">
+        <thead class="DO-table-head">
+          <tr>
+            <th>Name of Student</th>
+            <th class="DO-track">Track</th>
+            <th>Courses</th>
+          </tr>
+        </thead>
+        <tbody id="students-table-body" class="DO-table-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- // ============= END DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= END DO NOT EDIT ============== // -->
 </body>
+
 </html>
